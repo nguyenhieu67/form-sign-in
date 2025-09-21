@@ -1196,6 +1196,7 @@ body {
   font-weight: 400;
   color: var(--blue-800);
   background: var(--blue-700);
+  height: 100vh;
 }
 
 a {
@@ -1252,6 +1253,12 @@ strong {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+}
+@media (max-width: 575.98px) {
+  .main {
+    overflow-y: auto;
+  }
 }
 
 .sign-in {
@@ -1267,12 +1274,16 @@ strong {
 @media (max-width: 991.98px) {
   .sign-in {
     flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 100%;
     gap: 16px;
+    padding: 32px;
   }
 }
 @media (max-width: 575.98px) {
   .sign-in {
     padding: 0;
+    border-radius: 0;
   }
 }
 .sign-in__hide {
@@ -1293,7 +1304,8 @@ strong {
 }
 @media (max-width: 575.98px) {
   .sign-in__content {
-    padding: 24px;
+    padding: 12px 24px;
+    gap: 12px;
   }
 }
 .sign-in__title {
@@ -1303,7 +1315,7 @@ strong {
 }
 @media (max-width: 991.98px) {
   .sign-in__title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 }
 .sign-in__desc {
@@ -1326,8 +1338,8 @@ strong {
 }
 @media (max-width: 575.98px) {
   .sign-in__img {
-    height: 284px;
-    border-radius: 30px 30px 16px 16px;
+    height: 229px;
+    border-radius: 0 0 16px 16px;
   }
 }
 
@@ -1358,6 +1370,11 @@ strong {
     margin-top: 16px;
   }
 }
+@media (max-width: 991.98px) {
+  .form {
+    margin-top: 0;
+  }
+}
 .form__wrap {
   position: relative;
 }
@@ -1374,6 +1391,11 @@ strong {
   border-radius: 8px;
   transition: background-color, border-color, color;
   transition-duration: 0.3s ease-in-out;
+}
+@media (max-width: 767.98px) {
+  .form__input {
+    height: 48px;
+  }
 }
 .form__input::placeholder {
   color: var(--grey-color);
@@ -1398,6 +1420,11 @@ strong {
   background: var(--blue-800);
   transition: box-shadow 0.3s;
 }
+@media (max-width: 767.98px) {
+  .form__btn {
+    height: 48px;
+  }
+}
 .form__btn:hover {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
@@ -1407,7 +1434,7 @@ strong {
   top: 50%;
   z-index: -1;
   right: 0;
-  transition: top 0.1s ease-in-out;
+  transition: top 0.2s ease-in-out;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 150%;
@@ -1428,6 +1455,15 @@ strong {
   background: var(--white-color);
   box-shadow: 0 15px 60px 0 hsl(var(--clr-black), 0.25);
 }
+@media (max-width: 575.98px) {
+  .thanks {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+}
 .thanks__hide {
   transform: translateX(300%);
 }
@@ -1444,6 +1480,11 @@ strong {
   font-size: 5.6rem;
   line-height: 100%;
   font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .thanks__title {
+    font-size: 4rem;
+  }
 }
 .thanks__desc {
   line-height: 150%;

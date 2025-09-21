@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>
+            Frontend Mentor | Newsletter sign-up form with success message
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <main class="main row-cols-lg-1">
+                <article id="sign-in" class="sign-in">
+                    <div class="sign-in__content">
+                        <h1 class="sign-in__title">Stay updated!</h1>
+                        <p class="sign-in__desc">
+                            Join 60,000+ product managers receiving monthly
+                            updates on:
+                        </p>
+                        <div class="feature">
+                            <div class="feature-wrap">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt="Success"
+                                    class="feature__icon"
+                                />
+                                <p class="feature__desc">
+                                    Product discovery and building what matters
+                                </p>
+                            </div>
+                            <div class="feature-wrap">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt="Success"
+                                    class="feature__icon"
+                                />
+                                <p class="feature__desc">
+                                    Measuring to ensure updates are a success
+                                </p>
+                            </div>
+                            <div class="feature-wrap">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt="Success"
+                                    class="feature__icon"
+                                />
+                                <p class="feature__desc">And much more!</p>
+                            </div>
+                        </div>
+                        <form id="form" class="form">
+                            <div class="form__wrap">
+                                <label for="email" class="form__label"
+                                    >Email address</label
+                                >
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    class="form__input"
+                                    placeholder="email@company.com"
+                                />
+                                <p class="form__error">Valid email required</p>
+                            </div>
+                            <button type="submit" class="form__btn">
+                                Subscribe to monthly newsletter
+                            </button>
+                        </form>
+                    </div>
+                    <div class="sign-in__thumb">
+                        <img
+                            src="./assets/images/illustration-sign-up-desktop.svg"
+                            alt="Stay updated"
+                            class="sign-in__img"
+                        />
+                    </div>
+                </article>
+                <section id="thanks" class="thanks thanks__hide">
+                    <img
+                        src="./assets/images/icon-success.svg"
+                        alt="success"
+                        class="thanks__icon"
+                    />
+                    <h2 class="thanks__title">Thanks for subscribing!</h2>
+                    <p class="thanks__desc">
+                        A confirmation email has been sent to
+                        <span class="thanks__email">ash@loremcompany.com</span>.
+                        Please open it and click the button inside to confirm
+                        your subscription.
+                    </p>
+                    <button id="dismiss" class="form__btn thanks__btn">
+                        Dismiss message
+                    </button>
+                </section>
+            </main>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>

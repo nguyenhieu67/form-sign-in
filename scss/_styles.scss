@@ -105,13 +105,13 @@ strong {
 
     @include mixin.screen(lg) {
         flex-direction: column-reverse;
-        justify-content: space-evenly;
-        height: 100%;
         gap: 16px;
         padding: 32px;
     }
 
     @include mixin.screen(sm) {
+        justify-content: space-evenly;
+        height: 100%;
         padding: 0;
         border-radius: 0;
     }

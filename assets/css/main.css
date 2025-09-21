@@ -1274,14 +1274,14 @@ strong {
 @media (max-width: 991.98px) {
   .sign-in {
     flex-direction: column-reverse;
-    justify-content: space-evenly;
-    height: 100%;
     gap: 16px;
     padding: 32px;
   }
 }
 @media (max-width: 575.98px) {
   .sign-in {
+    justify-content: space-evenly;
+    height: 100%;
     padding: 0;
     border-radius: 0;
   }
